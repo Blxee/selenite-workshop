@@ -1,0 +1,32 @@
+## user stories:
+#### As a user i want to:
+- be able to track records (submissions)
+	- with the type of product
+	- and the amount the worker counted
+	- and the amount the women counted
+	- and the price of each piece
+	- and the date
+- be able to track workers and apprentices payouts
+	- how much they took
+	- how much I owe them
+- be able to track orders from buyers
+	- with the amount requested
+	- and how much is left
+	- and the date
+	- whether it's done or not
+	- and warning of deadline closing
+- **sync** my data online and between  devices
+	- while being able to use the app offline
+- have the choice to use the desktop app or the mobile app
+	- entries should be merged smoothly
+	- newer entries should overwrite older ones
+- have eye-catching and easy tp use UI
+- have the app in an easy language
+- able to register and login with my account
+	- my apprentices should have lesser command accounts
+	- have the ability to accept or reject entries from the apprentices
+- track working resources (motors, sand paper, glue, polish..)
+	- see which ones are running out
+	- each resource price
+- see the net money
+- see my important data in graphs
