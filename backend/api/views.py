@@ -1,6 +1,7 @@
 from django.shortcuts import render
 from django.contrib.auth.models import User, Group
-from .serializers import UserSerializer, GroupSerializer
+from api.models import Order, Product
+from api.serializers import ProductSerializer, UserSerializer, GroupSerializer, OrderSerializer
 from rest_framework import permissions, viewsets
 
 
@@ -20,3 +21,13 @@ class GroupViewSet(viewsets.ModelViewSet):
     queryset = Group.objects.all().order_by('name')
     serializer_class = GroupSerializer
     permission_classes = [permissions.IsAuthenticated]
+
+
+class OrderViewSet(viewsets.ModelViewSet):
+    queryset = Order.objects.all().order_by('name')
+    serializer_class = OrderSerializer
+
+
+class ProductViewSet(viewsets.ModelViewSet):
+    queryset = Product.objects.all().order_by('name')
+    serializer_class = ProductSerializer

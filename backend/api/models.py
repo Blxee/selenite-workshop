@@ -1,6 +1,7 @@
 from django.db import models
 from django.utils import timezone
 
+
 class Order(models.Model):
     """Represents an order from a buyer."""
     name = models.CharField(max_length=64)
